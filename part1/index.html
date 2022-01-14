@@ -39,27 +39,11 @@
     <!-- js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script>
-        //select or find tag in html
-        $('section').css({
-            'backgroundColor': 'red',
-            'padding': '30px',
-        })
-        $('section>h1').css({
-            'textAlign': 'center'
-        })
-        $('section#demo').css({
-            'backgroundColor': 'green',
-            'padding': '30px',
-        })
-        $('section#demo>h1').css({
-            'textAlign': 'right'
-        })
-        $('section.dem').css({
-            'backgroundColor': 'blue',
-            'padding': '30px',
-        })
-        $('section.dem>h1').css({
-            'textAlign': 'left'
+        $('section').click(function() {
+            $(this).css({
+                'backgroundColor': 'red',
+                'transition': 'all 300ms linear'
+            })
         })
     </script>
 
